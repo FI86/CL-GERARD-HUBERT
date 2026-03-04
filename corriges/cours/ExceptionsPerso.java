@@ -7,9 +7,6 @@ package corriges.cours;
 // Classe ExceptionDecrochage.
 // Exception Personnalisee heritant de la classe Exception.
 class ExceptionDecrochage extends Exception {
-	// SerialUID par defaut
-	private static final long serialVersionUID = 1L;
-	
 	// Propriete
     private final Integer vitesse;
     
@@ -20,7 +17,7 @@ class ExceptionDecrochage extends Exception {
     
     // Methode perso affichant la raison de l'exception
     public String getRaison() {
-        return "Vitesse de decrochage atteinte. Changer l'inclinaison ou augmenter la vitesse. Vitesse actuelle = " + this.vitesse;
+        return "Vitesse de decrochage atteinte. Changer l'inclinaison ou augmenter la vitesse. Vitesse actuelle = " + this.vitesse.toString();
     }
 }
 
