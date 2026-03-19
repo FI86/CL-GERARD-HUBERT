@@ -6,7 +6,7 @@ import static corriges.exercices.JDBC.Solution3_avance.main.Util.*;
 import static corriges.exercices.JDBC.Solution3_avance.IConstantes.*;
 
 public class Menus<T> {
-    public static <C> void sousMenu(Class <C> classeBean) {
+    public static <C> void sousMenu(Class<C> classeBean) {
         String reponse = "";
         
         while (!"Q".equals(reponse.toUpperCase())) {

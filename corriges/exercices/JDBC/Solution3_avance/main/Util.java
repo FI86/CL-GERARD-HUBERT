@@ -3,16 +3,11 @@ package corriges.exercices.JDBC.Solution3_avance.main;
 import java.util.Scanner;
 
 public class Util {
-    public static String question(String question) {
-        Scanner clavier = new Scanner(System.in);
-        String entreeClavier = "";
-        
+    private static final Scanner CLAVIER = new Scanner(System.in);
+    
+	public static String question(String question) {
         System.out.print(question);
-        
-        entreeClavier = clavier.nextLine();
-        clavier.close();
-        
-        return entreeClavier; 
+        return CLAVIER.nextLine();
     }
 
     @SuppressWarnings("unchecked")
